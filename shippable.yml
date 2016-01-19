@@ -10,7 +10,10 @@ before_script:
 
 script:
   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage test.php
-archive: true
+#archive: true
+notifications:
+ email:
+  - revathi@shippable.com
   
   
 
